@@ -5,7 +5,7 @@
     background-color: #ffc4df;
 }
 
-.container {
+.container , .congrats {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -13,6 +13,8 @@
     align-items: center;
     flex-direction: column;
     font-family: Roboto, sans-serif;
+    gap: 20px;
+    overflow: hidden;
 }
 
 .text {
@@ -24,6 +26,9 @@
 .button {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
 }
 
 .button button {
@@ -37,7 +42,28 @@
     transition: background-color 0.3s ease;
 }
 
-.button button:hover {
+#no-btn {
+    background-color: #c94f4f;
+    height: 3em;
+}
+
+/* .button button:hover {
     background-color: #5a2e1c;
     scale: 1.2;
+} */
+
+.emo {
+    font-size: clamp(14px, 3vw, 20px);
+    color: #6f3a24;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.gif img {
+    width: clamp(150px, 70vw, 500px);
+}
+
+.congrats {
+    display: none;
+    text-align: center;
 }
